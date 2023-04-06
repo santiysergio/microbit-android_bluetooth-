@@ -1,0 +1,45 @@
+{
+    "name": "microbit-Android_bluetooth ",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "I2C_LCD1602": "github:microbit-makecode-packages/i2clcd1620_cn#974412e3585f4dcd0fe1f5afed08a191dc8166fb",
+        "ir": "github:tinkertanker/pxt-ir-receiver#08ca7dec87d3fabf2115b0c77701389d7ab6046a",
+        "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.5",
+        "bluetooth": "*",
+        "blockyTalkyBLE": "github:laboratoryforplayfulcomputation/pxt-blockytalkyble-uart#v0.0.8",
+        "pca9685": "github:jdarling/pxt-pca9685#089c82dfb3ff81b8712ad1c0717036a4a65ef65a",
+        "microphone": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v1.1.90",
+        "tag": "v1.1.90",
+        "commits": "https://github.com/Microsoft/pxt-microbit/commits/c571c91f0ba665843e5ae54b15d6b9bb7c316265",
+        "target": "5.0.12",
+        "pxt": "4.1.49",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "pairing_mode": 0,
+                    "whitelist": 0
+                }
+            }
+        }
+    }
+}
